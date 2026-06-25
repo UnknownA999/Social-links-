@@ -119,6 +119,25 @@
   }
   .pin.ig .icon{ background: linear-gradient(135deg,#feda75,#fa7e1e,#d62976,#962fbf); }
   .pin.pin-it .icon{ background: var(--coral); }
+  .pin.tg .icon{ background: linear-gradient(135deg,#3FB8E8,#2599D6); }
+  .divider{
+    width:100%;
+    display:flex;
+    align-items:center;
+    gap:14px;
+    margin: 6px 0 22px;
+    color: var(--muted);
+    font-family:'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+  .divider::before, .divider::after{
+    content:'';
+    flex:1;
+    height:1px;
+    background: rgba(245,239,230,0.12);
+  }
   .pin-text{ text-align:left; flex:1; }
   .pin-text .label{
     font-weight:600;
@@ -166,6 +185,40 @@
         <span class="pin-text">
           <div class="label">Pinterest</div>
           <div class="sub">my boards</div>
+        </span>
+        <span class="arrow">→</span>
+      </a>
+
+      <a class="pin tg" href="https://t.me/unheard_thought" target="_blank" rel="noopener">
+        <span class="tape"></span>
+        <span class="icon">✒️</span>
+        <span class="pin-text">
+          <div class="label">unheard_thought</div>
+          <div class="sub">art, poems & stuff · Telegram channel</div>
+        </span>
+        <span class="arrow">→</span>
+      </a>
+    </div>
+
+    <div class="divider"><span>bots i built</span></div>
+
+    <div class="board">
+      <a class="pin tg" href="https://t.me/GoogleBookxSearchBot" target="_blank" rel="noopener">
+        <span class="tape"></span>
+        <span class="icon">📚</span>
+        <span class="pin-text">
+          <div class="label">Google Book Search Bot</div>
+          <div class="sub">@GoogleBookxSearchBot</div>
+        </span>
+        <span class="arrow">→</span>
+      </a>
+
+      <a class="pin tg" href="https://t.me/Printablenotesbot" target="_blank" rel="noopener">
+        <span class="tape"></span>
+        <span class="icon">🖨️</span>
+        <span class="pin-text">
+          <div class="label">Printable Notes Converter</div>
+          <div class="sub">@Printablenotesbot</div>
         </span>
         <span class="arrow">→</span>
       </a>
